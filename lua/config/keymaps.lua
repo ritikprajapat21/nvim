@@ -40,8 +40,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- Buffers
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
-vim.keymap.del("n", "<leader>bd")
-vim.keymap.del("n", "<leader>bo")
 vim.keymap.set("n", "<leader>x", function()
   require("snacks").bufdelete()
 end, { desc = "Delete Buffer" })
